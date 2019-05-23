@@ -1,15 +1,15 @@
 {
   "development": {
-    "username": "root",
-    "password": "kulmloveJ@89",
-    "database": "recipes_db",
-    "host": "localhost",
+    "username": "sqbpoxo6dl68x949",
+    "password": "bb7bjohl5i2fs6t6",
+    "database": "sp3kubpdqyei6447",
+    "host": "arfo8ynm6olw6vpn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": null,
-    "database": "testdb",
+    "database": "recipes_db",
     "host": "localhost",
     "dialect": "mysql",
     "logging": false
