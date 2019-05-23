@@ -13,7 +13,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/addRecipe.html"));
   });
 
-  app.get("/user", function(req, res) {
+  app.get("/users", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/user.html"));
   });
 
