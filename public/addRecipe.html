@@ -4,34 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <title>Document</title>
 </head>
 <body>
-        <div class="container hidden">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <!-- <div class="container hidden"> -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="/">Our Recipes</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+
+                <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
                         <a class="navbar-brand" href="#">Navbar</a>
-                      </nav>                                       
+                      </nav>                                        -->
             </div>
             <br>
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        <form id="cms">
-                            <div class="form-group">
-                                <label for="title">Name:</label>
-                                <input placeholder="Recipe Name" type="text" class="form-control" id="title">
-                                <br>
-                                <label for="body">Ingredients:</label>
-                                <textarea placeholder="" class="form-control" rows="5" id="body"></textarea>
-                               <br>
-                               <label for="body">Steps:</label>
-                                <textarea placeholder="" class="form-control" rows="10" id="body"></textarea>
-                                <br>
-                                <button type="submit" class="btn btn-success submit">Submit</button>
+            <div class ="container">
+                    <div class="row">
+                            <div class="col-md-6 offset-md-3">
+                                <form id="cms">
+                                    <div class="form-group">
+                                        <label for="title">Name:</label>
+                                        <input placeholder="Recipe Name" type="text" class="form-control" id="title">
+                                        <br>
+                                        <label for="body">Ingredients:</label>
+                                        <textarea placeholder="" class="form-control" rows="5" id="body"></textarea>
+                                       <br>
+                                       <label for="body">Steps:</label>
+                                        <textarea placeholder="" class="form-control" rows="10" id="body"></textarea>
+                                        <br>
+                                        <button type="submit" class="btn btn-success submit">Submit</button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-            </div>
+
+
+            </div>   
+           
+
         </body>
 </html>
