@@ -1,0 +1,28 @@
+.navbar-brand {
+    font-family: 'Cookie', cursive;
+    color:rgb(235, 156, 10)!important;
+    font-size: 40px;
+}
+
+.nav-link {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+img {
+    width: 1470px;
+    height: 550px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+h5 {
+    color:black;
+    font-size: 30px;
+    font-family: 'Gothic A1', sans-serif
+}
+
+p {
+    color: black;
+    font-size: 25px;
+    font-family: 'Gothic A1', sans-serif
+}
