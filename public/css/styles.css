@@ -18,11 +18,43 @@ img {
 h5 {
     color:black;
     font-size: 30px;
-    font-family: 'Gothic A1', sans-serif
+    font-family: 'Gothic A1', sans-serif;
 }
 
-p {
+.caption {
     color: black;
     font-size: 25px;
-    font-family: 'Gothic A1', sans-serif
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.card-header {
+padding-bottom: 2%;
+padding-top: 2%;
+text-align: center;
+font-size: 25px;
+font-family: 'Staatliches', cursive;
+background-color: rgb(255, 255, 255);
+color: rgb(235, 156, 10);
+}
+
+.card-body {
+    padding-bottom: 0%;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: white;
+}
+
+.scroll-box {
+    overflow-y: scroll;
+    height: 300px;
+    padding: 1rem;
+}
+
+/* addRecipe Page */
+
+label {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.btn.btn-success {
+    background-color:orange;
 }
