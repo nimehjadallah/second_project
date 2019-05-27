@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // $(document).ready(function(){
 //  // Getting jQuery references to the name, steps, form, and ingredients 
 // getRecipe();
@@ -57,6 +58,12 @@ $(document).ready(function() {
   getRecipes()
   // Getting jQuery references to the name, steps, form, and ingredients
 
+=======
+$(document).ready(function() {
+  getRecipes()
+  // Getting jQuery references to the name, steps, form, and ingredients
+
+>>>>>>> 1702846673d2fb8917164ceb354f6db925ae0b0f
   var nameInput = $("#name");
   var stepsInput = $("#steps");
   var ingredientsInput = $("#ingredients");
@@ -108,4 +115,7 @@ function getRecipes(){
     }
   })
 }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 1702846673d2fb8917164ceb354f6db925ae0b0f
