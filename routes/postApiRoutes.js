@@ -1,23 +1,6 @@
-<<<<<<< HEAD
 // Requiring our models
 var db = require("../models");
 
-=======
-// *********************************************************************************
-// api-routes.js - this file offers a set of routes for displaying and saving data to the db
-// *********************************************************************************
-
-// tables 
-
-// Dependencies
-// =============================================================
-
-// Requiring our models
-var db = require("../models");
-
-// Routes
-// =============================================================
->>>>>>> 1702846673d2fb8917164ceb354f6db925ae0b0f
 module.exports = function(app) {
 
     app.get("/api/recipe", function(req, res) {
