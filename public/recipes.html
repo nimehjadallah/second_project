@@ -11,11 +11,13 @@
   <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+<script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
     <title>Welcome to our Website</title>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <a class="navbar-brand" href="/">Our Recipes</a>
+                <a data-micron="pop" class="navbar-brand" href="/">Our Recipes</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,6 +31,12 @@
                         <li class="nav-item active">
                           <a class="nav-link" href="/users">Users<span class="sr-only">(current)</span></a>
                         </li>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="/addedRecipes">addedRecipes<span class="sr-only">(current)</span></a>
+                            </li>
+
+                      
                 </div>
             </nav>
         <div class="container">
@@ -61,9 +69,9 @@
               <br>
               <div class="card bg-light border-white mb-3">
                   <div class="card-header">Your Recipes</div>
-                  <div class="card-body">
-                      <div class="scroll-box" id="recipeBox">
-                          <h4 id="fat">@fat</h4>
+                  <div  class="card-body">
+                      <div id = "recipeBox" class="scroll-box">
+                          <!-- <h4 id="fat">@fat</h4>
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor auctor mattis. Cras nec ullamcorper ligula. Nullam velit eros, dictum eu dapibus vitae, elementum in ligula.</p>
                           <h4 id="mdo">@mdo</h4>
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor auctor mattis. Cras nec ullamcorper ligula. Nullam velit eros, dictum eu dapibus vitae, elementum in ligula.</p>
@@ -72,10 +80,11 @@
                           <h4 id="two">two</h4>
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor auctor mattis. Cras nec ullamcorper ligula. Nullam velit eros, dictum eu dapibus vitae, elementum in ligula.</p>
                           <h4 id="three">three</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor auctor mattis. Cras nec ullamcorper ligula. Nullam velit eros, dictum eu dapibus vitae, elementum in ligula.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor auctor mattis. Cras nec ullamcorper ligula. Nullam velit eros, dictum eu dapibus vitae, elementum in ligula.</p> -->
                   </div>
                 </div>
-                
-        <script src = "/js/chef.js"></script>
+                <script src = "/js/chef.js"></script>
+
 </body>
+
 </html>
