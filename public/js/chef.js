@@ -44,20 +44,20 @@ function submitRecipe(recipe) {
 }
 
 function getRecipes(){
-  $.get("/api/posts", function(data){
-    console.log(data)
+  // $.get("/api/posts", function(data){
+  //   console.log(data)
 
-    for(var i = 0; i < data.length; i++){
-      var div = $("<div>")
-      var title = $("<h4>").text(data[i].name)
-      var ingredient = $("<p>").text(data[i].ingredients)
-      var cookStep = $("<p>").text(data[i].steps)
-      div.append(title);
-      div.append(ingredient);
-      div.append(cookStep);
-      $(".recipeContainer").append(div)
-    }
-  })
+  //   for(var i = 0; i < data.length; i++){
+  //     var div = $("<div>")
+  //     var title = $("<h4>").text(data[i].name)
+  //     var ingredient = $("<p>").text(data[i].ingredients)
+  //     var cookStep = $("<p>").text(data[i].steps)
+  //     div.append(title);
+  //     div.append(ingredient);
+  //     div.append(cookStep);
+  //     $(".recipeContainer").append(div)
+  //   }
+  // })
 }
 
 //  // InitializeRows handles appending all of our constructed post HTML inside blogContainer
