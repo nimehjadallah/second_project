@@ -35,7 +35,7 @@ $(document).ready(function() {
 });
 function submitRecipe(recipe) {
   $.post("/api/posts", recipe, function() {
-    window.location.href = "/addRecipe";
+    window.location.href = "/";
   });
 }
 
@@ -47,8 +47,10 @@ function getRecipes(){
       var div = $("<div>")
       var title = $("<h4>").text(data[i].name)
       var paragrapgh = $("<p>").text(data[i].ingredients)
+      var steps = $("<p>").text(data[i].steps)
       div.append(title);
       div.append(paragrapgh);
+      div.append(steps);
       $("#recipeBox").append(div)
     }
   })
