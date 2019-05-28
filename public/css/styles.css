@@ -44,15 +44,18 @@ color: rgb(235, 156, 10);
 }
 
 .card-body {
-    padding-bottom: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     font-family: 'Gothic A1', sans-serif;
     background-color: white;
 }
 
-.scroll-box {
-    overflow-y: scroll;
-    height: 300px;
-    padding: 1rem;
+#potatoes {
+    margin-left: 4%;
+}
+
+#chicken {
+    margin-left: 4%;
 }
 
 /* addRecipe Page */
@@ -79,5 +82,5 @@ h1 {
 
 td {
     border-color: black;
-    background-color: orange;
+    background-color: rgb(255, 213, 140);
 }
