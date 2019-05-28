@@ -46,9 +46,11 @@ function getRecipes(){
     for(var i = 0; i < data.length; i++){
       var div = $("<div>")
       var title = $("<h4>").text(data[i].name)
-      var paragrapgh = $("<p>").text(data[i].ingredients)
+      var ingredient = $("<p>").text(data[i].ingredients)
+      var cookStep = $("<p>").text(data[i].steps)
       div.append(title);
-      div.append(paragrapgh);
+      div.append(ingredient);
+      div.append(cookStep);
       $("#recipeBox").append(div)
     }
   })
