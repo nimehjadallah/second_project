@@ -13,12 +13,18 @@ img {
     height: 550px;
     opacity: 0.5;
     filter: alpha(opacity=50);
+    border-radius: 15px;
 }
 
 h5 {
     color:black;
     font-size: 30px;
     font-family: 'Gothic A1', sans-serif;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 0;
 }
 
 .caption {
@@ -55,6 +61,23 @@ label {
     font-family: 'Gothic A1', sans-serif;
 }
 
-.btn.btn-success {
+.btn.btn-outline-white {
     background-color:orange;
+    color: white;
+}
+
+/* user Page */
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    color: black;
+}
+
+.table.table-striped {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+td {
+    border-color: black;
+    background-color: orange;
 }
