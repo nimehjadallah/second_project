@@ -1,11 +1,15 @@
+
 $(document).ready(function() {
-  getRecipes()
+  getRecipes();
   // Getting jQuery references to the name, steps, form, and ingredients
 
   var nameInput = $("#name");
   var stepsInput = $("#steps");
   var ingredientsInput = $("#ingredients");
   var cmsForm = $("#cms");
+
+  recipeContainer = $(".recipeContainer");
+
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", handleFormSubmit);
 
@@ -35,7 +39,7 @@ $(document).ready(function() {
 });
 function submitRecipe(recipe) {
   $.post("/api/posts", recipe, function() {
-    window.location.href = "/";
+    window.location.href = "/addedRecipes";
   });
 }
 
@@ -46,12 +50,49 @@ function getRecipes(){
     for(var i = 0; i < data.length; i++){
       var div = $("<div>")
       var title = $("<h4>").text(data[i].name)
-      var paragrapgh = $("<p>").text(data[i].ingredients)
-      var steps = $("<p>").text(data[i].steps)
+      var ingredient = $("<p>").text(data[i].ingredients)
+      var cookStep = $("<p>").text(data[i].steps)
       div.append(title);
-      div.append(paragrapgh);
-      div.append(steps);
-      $("#recipeBox").append(div)
+      div.append(ingredient);
+      div.append(cookStep);
+      $(".recipeContainer").append(div)
     }
   })
 }
+
+//  // InitializeRows handles appending all of our constructed post HTML inside blogContainer
+//  function initializeRows() {
+//   recipeContainer.empty();
+//   var postsToAdd = [];
+//   for (var i = 0; i < posts.length; i++) {
+//     postsToAdd.push(createNewRow(posts[i]));
+//   }
+//   recipeContainer.append(postsToAdd);
+// }
+//   // This function constructs a post's HTML
+
+// function createNewRow (post){
+//   var newRecipe = $("<div>");
+//   newRecipe.addClass("card");
+//   var newRecipeCardHeading = $("<div>");
+//   newRecipeCardHeading.addClass("card-header");
+//   var newRecipeTitle = $("<h3>");
+//   var newRecipeIngredients = $("<h5>");
+//   var newRecipeSteps = $("<p>");
+//    newRecipeCardBody = $("<div>");
+//    newRecipeCardBody.addClass("card-body");
+//   //  var newRecipeBody = $("<p>");
+//    newRecipeTitle.text(post.title + " ");
+//    newRecipetBody.text(post.body);
+//    newRecipeCardHeading.append(newRecipeTitle);
+//    newRecipeCardBody.append(newRecipeIngredients);
+//    newRecipeCardBody.append(newRecipeSteps);
+//    newRecipe.append(newRecipeCardHeading);
+//    newRecipe.append(newRecipeCardBody);
+//    newRecipe.append(newRecipeCardHeading);
+//    newRecipe.append(newRecipeCardBody);
+//    newRecipe.data("post", post);
+//    return newRecipe;
+
+// }
+
