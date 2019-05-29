@@ -8,7 +8,7 @@ $(document).ready(function() {
   var ingredientsInput = $("#ingredients");
   var cmsForm = $("#cms");
 
-  recipeContainer = $(".recipeContainer");
+  // recipeContainer = $(".recipeContainer");
 
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", handleFormSubmit);
