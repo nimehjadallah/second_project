@@ -9,16 +9,16 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/recipes.html"));
   });
 
-  app.get("/addRecipe", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/addRecipe.html"));
-  });
+  // app.get("/addRecipe", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/addRecipe.html"));
+  // });
 
-  app.get("/users", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/user.html"));
-  });
+  // app.get("/users", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/user.html"));
+  // });
 
-    app.get("/addedRecipes", function(req, res) {
-      res.sendFile(path.join(__dirname, "../public/addedRecipes.html"));
-  });
+  //   app.get("/addedRecipes", function(req, res) {
+  //     res.sendFile(path.join(__dirname, "../public/addedRecipes.html"));
+  // });
 
 };
