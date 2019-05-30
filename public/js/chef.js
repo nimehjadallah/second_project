@@ -81,7 +81,10 @@ function searchRecipe(thingSearched){
       }
     }
     if(recipeFound === false){
-      $(".recipeContainer").append("try again")
+      var div2 = $("<div>")
+      var tryAgain = $("<p>").text("TRY AGAIN")
+      div2.append(tryAgain)
+      $(".recipeContainer").append(div2)
     }
   });
 }
