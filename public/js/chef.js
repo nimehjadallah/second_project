@@ -7,11 +7,17 @@ $(document).ready(function() {
   var stepsInput = $("#steps");
   var ingredientsInput = $("#ingredients");
   var cmsForm = $("#cms");
+  var searchForm = $('#recipeAdd')
+  var searchInput = $('#search');
+  
 
-  // recipeContainer = $(".recipeContainer");
+
 
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", handleFormSubmit);
+  $(searchForm).on("submit", handleRecipeSubmit);
+  
+
 
   // A function for handling what happens when the form to create a new recipe is submitted
   function handleFormSubmit(event) {
@@ -25,7 +31,7 @@ $(document).ready(function() {
     ) {
       return;
     }
-    // Constructing a newPost object to hand to the database
+    //Constructing a newPost object to hand to the database
     var newRecipe = {
       name: nameInput.val().trim(),
       steps: stepsInput.val().trim(),
@@ -36,6 +42,49 @@ $(document).ready(function() {
 
     submitRecipe(newRecipe);
   }
+
+  //search function for searching for recipes!!
+
+  function handleRecipeSubmit(event){
+    event.preventDefault();
+    if (
+      !searchInput.val().trim() 
+    ) {
+      return;
+    }
+  
+  var thingSearched = searchInput.val().trim()
+
+
+  searchRecipe(thingSearched)
+  
+  }
+function searchRecipe(thingSearched){
+  $.get("/api/posts", function(data){
+
+    var recipeFound = false
+    console.log(thingSearched)
+    $(".recipeContainer").empty();
+    for(var i = 0; i < data.length; i++){
+
+      if(data[i].name.includes(thingSearched) ||data[i].ingredients.includes(thingSearched) ){
+       recipeFound = true
+        var div = $("<div>")
+        var title = $("<h4>").text(data[i].name)
+        var ingredient = $("<p>").text(data[i].ingredients)
+        var cookStep = $("<p>").text(data[i].steps)
+        div.append(title);
+        div.append(ingredient);
+        div.append(cookStep);
+        $(".recipeContainer").append(div)
+
+      }
+    }
+    if(recipeFound === false){
+      $(".recipeContainer").append("try again")
+    }
+  });
+}
 });
 function submitRecipe(recipe) {
   $.post("/api/posts", recipe, function() {
@@ -57,8 +106,15 @@ function getRecipes(){
       div.append(cookStep);
       $(".recipeContainer").append(div)
     }
-  })
+  });
 }
+//search function for searching for recipes!!
+
+
+
+
+
+
 
 //  // InitializeRows handles appending all of our constructed post HTML inside blogContainer
 //  function initializeRows() {
