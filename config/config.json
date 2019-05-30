@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "sqbpoxo6dl68x949",
-    "password": "bb7bjohl5i2fs6t6",
-    "database": "sp3kubpdqyei6447",
-    "host": "arfo8ynm6olw6vpn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "yourRootPassword",
+    "database": "recipes_db",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
