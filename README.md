@@ -7,7 +7,7 @@
 * Vinny Principe
 
 ## Project Description
-**Chef Anonymous** is a cooking recipe website that will let users add their favorite recipes and search for recipes added by other users.
+**Chefs Anonymous** is a cooking recipe website that will let users add their favorite recipes and search for recipes added by other users.
 
 
 
