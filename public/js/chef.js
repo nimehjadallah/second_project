@@ -61,7 +61,6 @@ $(document).ready(function() {
   }
 function searchRecipe(thingSearched){
   $.get("/api/posts", function(data){
-
     var recipeFound = false
     console.log(thingSearched)
     $(".recipeContainer").empty();
@@ -86,6 +85,13 @@ function searchRecipe(thingSearched){
   });
 }
 });
+
+$("#recipeAdd").on ("click", function() {
+    window.location.href = "/addedRecipes";
+});
+
+
+
 function submitRecipe(recipe) {
   $.post("/api/posts", recipe, function() {
     window.location.href = "/addedRecipes";
@@ -109,8 +115,6 @@ function getRecipes(){
   });
 }
 //search function for searching for recipes!!
-
-
 
 
 
