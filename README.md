@@ -13,7 +13,7 @@
 
 ## Deployment
 * See the Deployead app on Heroku
-[Our Recipes](https://damp-waters-30860.herokuapp.com/)
+[Chefs Anonymous](https://damp-waters-30860.herokuapp.com/)
 
 
   <!-- add a picture -->
