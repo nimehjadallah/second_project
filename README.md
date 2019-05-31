@@ -7,7 +7,7 @@
 * Vinny Principe
 
 ## Project Description
-**Our Recipes** is a cooking recipe website that will let users add their favorite recipes and search for recipes added by other users.
+**Chef Anonymous** is a cooking recipe website that will let users add their favorite recipes and search for recipes added by other users.
 
 
 
