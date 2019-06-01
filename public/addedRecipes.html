@@ -11,6 +11,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
 <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
@@ -19,7 +21,7 @@
 <body>
         <!-- <div class="container hidden"> -->
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                        <a  data-micron="pop" class="navbar-brand" href="/">Our Recipes</a>
+                        <a  data-micron="pop" class="navbar-brand" href="/">Chefs Anonymous</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
@@ -40,18 +42,17 @@
                                     <div class="col-md-6 offset-md-3">
                                         <form id="recipeAdd">
                                             <div class="form-group">
-                                                <label for="title">Search:</label>
                                                 <input placeholder="Recipe Name" type="text" class="form-control" id="search">
                                                 <br>
-                                                <button type="submit" data-micron="tada" class="btn btn-outline-white submit">Submit</button>
-                                                
+                                                <button type="submit" data-micron = "tada" class="myButton">Search</button>
+                                               
                                             </div>
                                         </form>
                                     </div>
                                     <form id="viewAll">
                                       <div class="form-group">
                                           
-                                          <button type="submit" class="btn btn-outline-white submit" data-micron="blink">See all</button>
+                                          <button type="submit" data-micron = "blink" class="btn btn-outline-white submit"><u>See all</u></button>
                                           
                                       </div>
                                   </form>
@@ -60,12 +61,17 @@
                                         
             </div>
             <br>
-            <div class ="container recipe">
-                <div class="row">
-                    <div class="col-md-12 recipeContainer">
-
+            <div class ="container">
+                <div class="card border-white">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="scroll-box">
+                    <div class="card-body recipeAdd">
+                                    <div class="col-md-12 recipeContainer">
+                              </div>
+                  </div>
                     </div>
-                </div>
+                  </div>
+                  
 
             </div>   
            
