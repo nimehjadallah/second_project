@@ -67,7 +67,7 @@ function searchRecipe(thingSearched){
     $(".recipeContainer").empty();
     for(var i = 0; i < data.length; i++){
 
-      if(data[i].name.includes(thingSearched) ||data[i].ingredients.includes(thingSearched) ){
+      if(data[i].name.includes(thingSearched) || data[i].ingredients.includes(thingSearched) ){
        recipeFound = true
         var div = $("<div>")
         var title = $("<h4>").text(data[i].name)
@@ -82,7 +82,7 @@ function searchRecipe(thingSearched){
     }
     if(recipeFound === false){
       var div2 = $("<div>")
-      var tryAgain = $("<p>").text("TRY AGAIN")
+      var tryAgain = $("<p class='tryAgain' />").text("TRY AGAIN")
       div2.append(tryAgain)
       $(".recipeContainer").append(div2)
     }
@@ -101,6 +101,7 @@ function getRecipes(){
 
     for(var i = 0; i < data.length; i++){
       var div = $("<div>")
+      div.addClass("addCard")
       var title = $("<h4>").text(data[i].name)
       var ingredient = $("<p>").text(data[i].ingredients)
       var cookStep = $("<p>").text(data[i].steps)
