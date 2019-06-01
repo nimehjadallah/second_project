@@ -1,5 +1,9 @@
 
 $(document).ready(function() {
+ 
+  var localInput = localStorage.getItem("input");
+  searchRecipe(localInput);
+  // console.log(localInput);
   getRecipes();
   // Getting jQuery references to the name, steps, form, and ingredients
 
@@ -16,6 +20,7 @@ $(document).ready(function() {
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", handleFormSubmit);
   $(searchForm).on("submit", handleRecipeSubmit);
+
   
 
 
@@ -61,7 +66,6 @@ $(document).ready(function() {
   }
 function searchRecipe(thingSearched){
   $.get("/api/posts", function(data){
-
     var recipeFound = false
     console.log(thingSearched)
     $(".recipeContainer").empty();
@@ -70,6 +74,7 @@ function searchRecipe(thingSearched){
       if(data[i].name.includes(thingSearched) || data[i].ingredients.includes(thingSearched) ){
        recipeFound = true
         var div = $("<div>")
+        div.addClass("addCard");
         var title = $("<h4>").text(data[i].name)
         var ingredient = $("<p>").text(data[i].ingredients)
         var cookStep = $("<p>").text(data[i].steps)
@@ -88,7 +93,12 @@ function searchRecipe(thingSearched){
     }
   });
 }
+
+
 });
+
+
+
 function submitRecipe(recipe) {
   $.post("/api/posts", recipe, function() {
     window.location.href = "/addedRecipes";
@@ -101,7 +111,7 @@ function getRecipes(){
 
     for(var i = 0; i < data.length; i++){
       var div = $("<div>")
-      div.addClass("addCard")
+      div.addClass("addCard");
       var title = $("<h4>").text(data[i].name)
       var ingredient = $("<p>").text(data[i].ingredients)
       var cookStep = $("<p>").text(data[i].steps)
@@ -113,8 +123,6 @@ function getRecipes(){
   });
 }
 //search function for searching for recipes!!
-
-
 
 
 
