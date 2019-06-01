@@ -89,7 +89,7 @@ function searchRecipe(thingSearched){
 }
 });
 
-$("#recipeAdd").on ("click", function() {
+$("#homeBtn").on ("click", function() {
     window.location.href = "/addedRecipes";
 });
 
