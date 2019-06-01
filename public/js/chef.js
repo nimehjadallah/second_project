@@ -1,5 +1,9 @@
 
 $(document).ready(function() {
+ 
+  var localInput = localStorage.getItem("input");
+  searchRecipe(localInput);
+  // console.log(localInput);
   getRecipes();
   // Getting jQuery references to the name, steps, form, and ingredients
 
@@ -16,6 +20,7 @@ $(document).ready(function() {
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", handleFormSubmit);
   $(searchForm).on("submit", handleRecipeSubmit);
+
   
 
 
@@ -87,10 +92,8 @@ function searchRecipe(thingSearched){
     }
   });
 }
-});
 
-$("#homeBtn").on ("click", function() {
-    window.location.href = "/addedRecipes";
+
 });
 
 
