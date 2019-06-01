@@ -81,7 +81,8 @@ color: rgb(235, 156, 10);
 }
 
 #cms {
-    background-color: rgba(245, 239, 239, 0.192);
+    background: rgb(252,247,114);
+    background: radial-gradient(circle, rgba(252,247,114,0.520045518207283) 0%, rgba(252,160,70,0.5956757703081232) 100%);
     border: 8px ridge orange;
     border-radius: 5px;
     width: 600px;
@@ -175,7 +176,8 @@ td {
 }
 
 #recipeAdd {
-    background-color: rgba(245, 239, 239, 0.192);
+    background: rgb(252,247,114);
+    background: radial-gradient(circle, rgba(252,247,114,0.520045518207283) 0%, rgba(252,160,70,0.5956757703081232) 100%);
     border: 8px inset orange;
     border-radius: 5px;
     padding: 50px;
