@@ -1,10 +1,21 @@
 
 $(document).ready(function() {
  
+   
   var localInput = localStorage.getItem("input");
-  searchRecipe(localInput);
-  // console.log(localInput);
-  getRecipes();
+  localStorage.clear();
+
+  
+  if (localInput){
+    searchRecipe(localInput);
+  } else{
+      getRecipes();
+  }
+  
+  // var localInput = localStorage.getItem("input");
+  // searchRecipe(localInput);
+  // // console.log(localInput);
+  // getRecipes();
   // Getting jQuery references to the name, steps, form, and ingredients
 
   var nameInput = $("#name");
