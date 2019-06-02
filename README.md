@@ -18,8 +18,8 @@
 
 
 * Users can add a recipe and search for a recipe that already exists 
-![](public/img/addedRecipes1.png)
-![](public/img/addedRecipes2.png)
+![](public/img/addedRecipes1.PNG)
+![](public/img/addedRecipes2.PNG)
 
 
 
