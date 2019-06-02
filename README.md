@@ -14,9 +14,13 @@
 ## Deployment
 * See the Deployead app on Heroku
 [Chefs Anonymous](https://damp-waters-30860.herokuapp.com/)
+![](public/img/homePage.png)
 
 
-  <!-- add a picture -->
+* Users can add a recipe and search for a recipe that already exists 
+![](public/img/addedRecipes1.png)
+![](public/img/addedRecipes2.png)
+
 
 
 
