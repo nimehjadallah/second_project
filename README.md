@@ -16,7 +16,14 @@
 [Chefs Anonymous](https://damp-waters-30860.herokuapp.com/)
 
 
-  <!-- add a picture -->
+![](public/img/homePage.png)
+
+
+
+* Users can add a recipe and search for a recipe that already exists 
+![](public/img/addedRecipes1.PNG)
+![](public/img/addedRecipes2.PNG)
+
 
 
 
