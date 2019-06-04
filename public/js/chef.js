@@ -11,12 +11,6 @@ $(document).ready(function() {
   } else{
       getRecipes();
   }
-  
-  // var localInput = localStorage.getItem("input");
-  // searchRecipe(localInput);
-  // // console.log(localInput);
-  // getRecipes();
-  // Getting jQuery references to the name, steps, form, and ingredients
 
   var nameInput = $("#name");
   var stepsInput = $("#steps");
@@ -133,45 +127,3 @@ function getRecipes(){
     }
   });
 }
-//search function for searching for recipes!!
-
-
-
-
-
-//  // InitializeRows handles appending all of our constructed post HTML inside blogContainer
-//  function initializeRows() {
-//   recipeContainer.empty();
-//   var postsToAdd = [];
-//   for (var i = 0; i < posts.length; i++) {
-//     postsToAdd.push(createNewRow(posts[i]));
-//   }
-//   recipeContainer.append(postsToAdd);
-// }
-//   // This function constructs a post's HTML
-
-// function createNewRow (post){
-//   var newRecipe = $("<div>");
-//   newRecipe.addClass("card");
-//   var newRecipeCardHeading = $("<div>");
-//   newRecipeCardHeading.addClass("card-header");
-//   var newRecipeTitle = $("<h3>");
-//   var newRecipeIngredients = $("<h5>");
-//   var newRecipeSteps = $("<p>");
-//    newRecipeCardBody = $("<div>");
-//    newRecipeCardBody.addClass("card-body");
-//   //  var newRecipeBody = $("<p>");
-//    newRecipeTitle.text(post.title + " ");
-//    newRecipetBody.text(post.body);
-//    newRecipeCardHeading.append(newRecipeTitle);
-//    newRecipeCardBody.append(newRecipeIngredients);
-//    newRecipeCardBody.append(newRecipeSteps);
-//    newRecipe.append(newRecipeCardHeading);
-//    newRecipe.append(newRecipeCardBody);
-//    newRecipe.append(newRecipeCardHeading);
-//    newRecipe.append(newRecipeCardBody);
-//    newRecipe.data("post", post);
-//    return newRecipe;
-
-// }
-

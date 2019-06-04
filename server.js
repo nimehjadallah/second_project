@@ -25,6 +25,8 @@ app.use(express.static("public"));
 // =============================================================
 require("./routes/htmlRoutes.js")(app);
 require("./routes/apiRoutes.js")(app);
+require("./routes/userApiRoutes.js")(app);
+
 
 
 // Syncing our sequelize models and then starting our Express app
